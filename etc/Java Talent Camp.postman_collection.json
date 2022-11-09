@@ -1,0 +1,64 @@
+{
+	"info": {
+		"_postman_id": "06d4ab78-bfad-4fb0-9429-b7b4c484203c",
+		"name": "Java Talent Camp",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "21045198"
+	},
+	"item": [
+		{
+			"name": "ActiveMQ",
+			"item": [
+				{
+					"name": "Produce",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"studentId\": \"1\",\r\n    \"name\": \"Matias\",\r\n    \"rollNumber\": \"Test1234\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9091/produce/message",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9091",
+							"path": [
+								"produce",
+								"message"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Consume",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9091/consume/message",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9091",
+							"path": [
+								"consume",
+								"message"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

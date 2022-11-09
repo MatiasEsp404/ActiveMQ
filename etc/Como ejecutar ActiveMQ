@@ -1,0 +1,12 @@
+Ir a la carpeta donde se descomprimió ActiveMQ y ejecutar los siguientes comandos: 
+
+    cd apache-activemq-5.17.2/bin
+    ./activemq start
+
+
+Página de ActiveMQ: 
+
+    http://localhost:8161/admin/
+
+
+Una vez adentro hacer click en "Queues".
